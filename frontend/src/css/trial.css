@@ -62,3 +62,64 @@
 
   pointer-events: none;
 }
+
+/* Responsive for trail.css */
+@media (max-width: 1024px) {
+  .trial-watermark {
+    font-size: 80px;
+  }
+
+  .image-watermark {
+    font-size: 30px;
+    padding: 8px 16px;
+  }
+
+  .user-session {
+    gap: 8px;
+  }
+
+  .logout-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .trial-watermark {
+    font-size: 50px;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-watermark {
+    font-size: 20px;
+    padding: 5px 10px;
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+
+  .user-session {
+    gap: 6px;
+  }
+
+  .logout-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trial-watermark {
+    font-size: 35px;
+  }
+
+  .image-watermark {
+    font-size: 14px;
+    padding: 3px 8px;
+  }
+
+  .logout-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}

@@ -39,7 +39,7 @@ body {
   line-height: 1.4;
 
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
   z-index: 1000;
 }
@@ -60,3 +60,218 @@ body {
 
 /* HEADER */
 
+/* ============================================ */
+/* HOME PAGE - MOBILE & TABLET RESPONSIVE */
+/* ============================================ */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  nav {
+    padding: 20px 30px !important;
+  }
+
+  .text-6xl,
+  .text-5xl {
+    font-size: 48px !important;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .max-w-5xl,
+  .max-w-7xl {
+    padding: 0 20px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  /* Navbar - Your existing classes */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px !important;
+  }
+
+  nav > div:first-child {
+    text-align: center;
+  }
+
+  nav .hidden.md\:flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav button {
+    padding: 10px 20px !important;
+    font-size: 14px;
+  }
+
+  /* Hero Section */
+  section:first-of-type {
+    padding: 40px 20px !important;
+  }
+
+  .grid.lg\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 50px !important;
+  }
+
+  .text-6xl,
+  .text-8xl {
+    font-size: 36px !important;
+  }
+
+  .text-4xl.md\:text-5xl {
+    font-size: 24px !important;
+  }
+
+  .text-xl {
+    font-size: 16px !important;
+  }
+
+  .flex-wrap {
+    justify-content: center;
+  }
+
+  .flex-wrap.gap-3 {
+    gap: 8px !important;
+  }
+
+  .flex-wrap.gap-3 span {
+    font-size: 11px !important;
+    padding: 6px 12px !important;
+  }
+
+  .flex-wrap.gap-5 {
+    gap: 15px !important;
+  }
+
+  .flex-wrap.gap-5 button {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+    text-align: center;
+  }
+
+  .grid-cols-3 h2 {
+    font-size: 24px !important;
+  }
+
+  .grid-cols-3 p {
+    font-size: 10px !important;
+  }
+
+  /* Why Section */
+  .md\:grid-cols-2,
+  .lg\:grid-cols-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .text-5xl,
+  .md\:text-6xl {
+    font-size: 28px !important;
+  }
+
+  /* Features Section */
+  .md\:grid-cols-2,
+  .lg\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .text-3xl {
+    font-size: 22px !important;
+  }
+
+  /* Pricing Section */
+  .lg\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .text-6xl {
+    font-size: 36px !important;
+  }
+
+  /* FAQ Section */
+  .text-5xl,
+  .md\:text-6xl {
+    font-size: 32px !important;
+  }
+
+  .text-2xl {
+    font-size: 18px !important;
+  }
+
+  .text-lg {
+    font-size: 14px !important;
+  }
+
+  .space-y-6 {
+    gap: 15px;
+  }
+
+  .rounded-\[28px\] {
+    padding: 20px !important;
+  }
+
+  /* Stats badges */
+  .mt-8 .flex-wrap {
+    gap: 8px;
+  }
+
+  .mt-8 .flex-wrap span {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  /* Floating trial button */
+  .fixed.bottom-8.right-0 {
+    bottom: 15px !important;
+  }
+
+  .fixed.bottom-8.right-0 button {
+    padding: 8px 12px !important;
+    font-size: 11px !important;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .text-6xl,
+  .text-8xl {
+    font-size: 28px !important;
+  }
+
+  .text-5xl,
+  .md\:text-6xl {
+    font-size: 24px !important;
+  }
+
+  nav .hidden.md\:flex {
+    gap: 10px !important;
+  }
+
+  nav .hidden.md\:flex a {
+    font-size: 12px !important;
+  }
+
+  .grid-cols-3 h2 {
+    font-size: 18px !important;
+  }
+
+  .grid-cols-3 p {
+    font-size: 9px !important;
+  }
+
+  .mt-8 .flex-wrap span {
+    font-size: 9px !important;
+    padding: 3px 6px !important;
+  }
+}
