@@ -14,8 +14,6 @@ import RefundPolicy from "./pages/RefundPolicy";
 import TermCondition from "./pages/TermCondition";
 import CookieBanner from "./components/CookieBanner";
 
-import PaymentResult from "./pages/PaymentResult";
-
 function App() {
   return (
     <>
@@ -34,7 +32,6 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/term-condition" element={<TermCondition />} />
-        <Route path="/payment-result" element={<PaymentResult />} />
       </Routes>
     </>
   );
