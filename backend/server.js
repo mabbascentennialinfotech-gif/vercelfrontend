@@ -13,9 +13,16 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: [
+      'http://localhost:5173',      // ✅ Local development (http, not https)
+      'http://localhost:3000',       // ✅ Alternative local port
+      'https://vercelfrontend-1.onrender.com'  // ✅ Your production frontend URL
+    ],
+    credentials: true
   })
 );
+
+
 app.use(express.json());
 app.use("/api/payment", paymentRoutes);
 app.use("/api/auth", authRoutes);
